@@ -14,8 +14,11 @@ These features are provided via an integration into Apple HomeKit (a.k.a. Home A
 <img alt="Toggle Page" src="imgs/apple_home_toggle.jpeg" width="200">
 
 ## Circuit Diagram
-<img alt="Circuit Diagram" src="imgs/circuit_diagram.png" width="500">
+<img alt="Circuit Diagram" src="imgs/circuit_diagram.png">
 
+The individual circuits are:
+
+<img alt="Circuits" src="imgs/circuits.png">
 The ESP32 has the following interactions:
 
 - **Garage Door Magnetic Sensor** is a magnetic reed switch in a NC (normally closed) configuration. This ensures if the wire gets cut, the sensor faults to "open" and will send alerts.
