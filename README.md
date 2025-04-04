@@ -3,7 +3,7 @@
 **DISCLAIMER: You assume all risk associated with building this project. I cannot personally inspect your work or determine if your Garage Door unit is compatible with this device. I am not responsible if you damage, blow up, get blown up, fall, start a fire, or any other outcomes good or bad that may happen while you are inspired by this project!!!**
 
 <a href="https://tekcasts.com/play/what-is-a-smart-garage-door">
-    <img src="imgs/01_intro.png">
+    <img src="imgs/video_series.png" alt="watch the video series">
 </a>
 
 
@@ -25,7 +25,7 @@ These features are provided via an integration into Apple HomeKit (a.k.a. Home A
 
 The individual circuits are:
 
-<img alt="Circuits" src="imgs/circuits.png" alt="watch the video series">
+<img alt="Circuits" src="imgs/circuits.png" alt="circuits">
 
 In the above, the <span style="color:red;">RED</span> labels are the ESP32 pins. The <span style="color:blue;">BLUE</span> labels are the garage door unit control terminals. NOTE: One should have a positive voltage and the negative side is connected to the ESP32 ground to form a common ground plane.
 
