@@ -1,7 +1,7 @@
-#include "GarageDoor.h"
 #include "DoorSensor.h"
 #include "DoorButton.h"
 #include "Console.h"
+#include "GarageDoor.h"
 #include "SpanRollback.h"
 
 #define CONTROL_PIN 18
