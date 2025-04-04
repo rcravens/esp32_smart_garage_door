@@ -127,8 +127,8 @@ I installed the magnetic sensor along the left-side of the door. I mounted the "
 
 ## References
 
-- <a href="https://forum.iobroker.net/assets/uploads/files/1634848447889-apple-spezifikation-homekit.pdf">Apple Home Kit Spec</a>
-- <a href="https://github.com/HomeSpan/HomeSpan">HomeSpan Repo</a>
-- <a href="https://www.reddit.com/r/homeautomation/comments/wjhm9c/how_do_the_simple_wall_switches_on_garage_door/">Discussion On Garage Door Wall Switches</a>
-- <a href="https://app.cirkitdesigner.com/project/e83cdded-e52b-4814-ba58-870e42daf97c">Cirkit Diagram</a>
-- <a href="https://crcit.net/c/d1eeae9e315a4bb2b5e7f52645e922a7">Sub Circuits</a>
+- <a href="https://forum.iobroker.net/assets/uploads/files/1634848447889-apple-spezifikation-homekit.pdf" target="_blank">Apple Home Kit Spec</a>
+- <a href="https://github.com/HomeSpan/HomeSpan" target="_blank">HomeSpan Repo</a>
+- <a href="https://www.reddit.com/r/homeautomation/comments/wjhm9c/how_do_the_simple_wall_switches_on_garage_door/" target="_blank">Discussion On Garage Door Wall Switches</a>
+- <a href="https://app.cirkitdesigner.com/project/e83cdded-e52b-4814-ba58-870e42daf97c" target="_blank">Cirkit Diagram</a>
+- <a href="https://crcit.net/c/d1eeae9e315a4bb2b5e7f52645e922a7" target="_blank">Sub Circuits</a>
