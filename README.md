@@ -1,5 +1,7 @@
 # ESP32 Smart Garage Door
 
+**DISCLAIMER: You assume all risk associated with building this project. I cannot personally inspect your work or determine if your Garage Door unit is compatible with this device. I am not responsible if you damage, blow up, get blown up, fall, start a fire, or any other outcomes good or bad that may happen while you are inspired by this project!!!**
+
 ## Purpose
 Ever come home to find your garage door has been opened while you were gone? This project converts an existing garage door into a "smart" garage door by adding the following features:
 
@@ -21,6 +23,18 @@ The ESP32 has the following interactions:
 - **Status LED** is an indicator used by the HomeSpan code. It flashes based on mode and status. Refer to <a href="https://github.com/HomeSpan/HomeSpan">HomeSpan documentation</a> for details.
 - **Control Button** is used to manually toggle the device into various configuration modes. Refer to <a href="https://github.com/HomeSpan/HomeSpan">HomeSpan documentation</a>.
 
+## Development Board
+
+<img src="imgs/dev_board.jpg" alt="development board">
+
+Above you can see the development environment I used. On the bread board you can identify:
+
+- `Push Button` - This is the "control button".
+- `Green LED` - This is the "status LED".
+- `Red LED` - This is the simulation of the "Garage Door Button". I can see the LED turn on when the button is pushed. The 9V battery is providing the DC voltage that the garage door unit provides between the button wires. The ESP32 is "shorting" these two wires together briefly to initiate the garage door moving.
+- `Black Magnetic Switch` - This can be seen just above the ESP32. This unit has 3 wires to support NO/NC (normally open/closed) configurations. I am using the blue & white wires for a NC configuration.
+- `ESP32` and `Development Board` - I like this development board as it provide jumper pin options for development and for production you can use the screw terminal to ensure the wires are not coming loose.
+- NOT SHOWN: The 2N2222 transister & 1kΩ base resistor that is used as a "driver/isolation circuit" for the "garage door button".
 
 ## Parts
 - [ESP32 Board + Breakout Kit](https://www.amazon.com/dp/B0C8DBN29X)
@@ -77,3 +91,28 @@ Once installed, the device can receive over-the-air (OTA) updates. The `main.cpp
 3. At the bottom, click the "Set upload/monitor/test port" button. Select "Custom..." and enter the IP Address.
 
 The upload should now be pushed OTA to the device.
+
+## Installation
+I cannot tell you how to install this device in your environment. I will provide a few photos from my installation:
+
+<img src="imgs/unit_close.jpg" alt="close up of device and garage door unit">
+
+Above you can see I mounted the device (in the black box with the green LED) using 3M adhesive tape to the top of my garage door unit. 
+
+**Garage Door Button**
+
+My unit has 3 "screw terminals" at the top. I followed the wall mounted button's wire and it is mounted to the left-two screw terminals. The left most one measured positive and I connected this one to the collector side of the "Garage Door Button".
+
+> DISCLAIMER: I am not responsible for any damage if you do this!
+> 
+> Before mounting you can test if your garage door unit is compatible by briefly shorting these two terminals together.
+
+**Garage Door Magnetic Sensor**
+
+<img src="imgs/unit_sensor_wire.jpg" alt="sensor wire">
+
+I followed the wiring of the existing "light beam sensor" to the left-side of my garage door. It is important that this wire be tight enough and not sag into the door as it operates.
+
+<img src="imgs/sensor_2.jpg" alt="sensor">
+
+I installed the magnetic sensor along the left-side of the door. I mounted the "wired portion" to the frame using "liquid nails" and the "magnet portion" to the door using more of the 3M adhesive tape. This sensor has a range of around 3/4". Be sure to leave a gap of around 1/8" to prevent the two parts from colliding when the door is in operation.
