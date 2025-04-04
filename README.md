@@ -10,8 +10,10 @@ Ever come home to find your garage door has been opened while you were gone? Thi
 
 These features are provided via an integration into Apple HomeKit (a.k.a. Home App). Here are a few screenshots from the Apple Home app:
 
-<img alt="Status Page" src="imgs/apple_home_status_page.jpeg" width="200">
-<img alt="Toggle Page" src="imgs/apple_home_toggle.jpeg" width="200">
+<div style="margin:auto">
+<img style="display:inline-block;width:40%;margin:3px;" alt="Status Page" src="imgs/apple_home_status_page.jpeg" width="200">
+<img style="display:inline-block;width:40%;margin:3px;" alt="Toggle Page" src="imgs/apple_home_toggle.jpeg" width="200">
+</div>
 
 ## Circuit Diagram
 <img alt="Circuit Diagram" src="imgs/circuit_diagram.png">
