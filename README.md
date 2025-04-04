@@ -19,6 +19,9 @@ These features are provided via an integration into Apple HomeKit (a.k.a. Home A
 The individual circuits are:
 
 <img alt="Circuits" src="imgs/circuits.png">
+
+In the above, the <span style="color:red;">RED</span> labels are the ESP32 pins. The <span style="color:blue;">BLUE</span> labels are the garage door unit control terminals. NOTE: One should have a positive voltage and the negative side is connected to the ESP32 ground to form a common ground plane.
+
 The ESP32 has the following interactions:
 
 - **Garage Door Magnetic Sensor** is a magnetic reed switch in a NC (normally closed) configuration. This ensures if the wire gets cut, the sensor faults to "open" and will send alerts.
@@ -119,3 +122,9 @@ I followed the wiring of the existing "light beam sensor" to the left-side of my
 <img src="imgs/sensor_2.jpg" alt="sensor">
 
 I installed the magnetic sensor along the left-side of the door. I mounted the "wired portion" to the frame using "liquid nails" and the "magnet portion" to the door using more of the 3M adhesive tape. This sensor has a range of around 3/4". Be sure to leave a gap of around 1/8" to prevent the two parts from colliding when the door is in operation.
+
+## References
+
+- <a href="https://forum.iobroker.net/assets/uploads/files/1634848447889-apple-spezifikation-homekit.pdf">Apple Home Kit Spec</a>
+- <a href="https://github.com/HomeSpan/HomeSpan">HomeSpan Repo</a>
+- <a href="https://www.reddit.com/r/homeautomation/comments/wjhm9c/how_do_the_simple_wall_switches_on_garage_door/">Discussion On Garage Door Wall Switches</a>
