@@ -11,6 +11,7 @@
 #define DOOR_OPENING 2
 #define DOOR_CLOSING 3
 #define DOOR_STOPPED 4
+
 #define MOVING_TIME_SECONDS 30
 #define DOOR_SENSOR_CAPTURE_TIME_SECONDS 10
 #define LAST_CHANGED_THRESHOLD_MILLISECONDS 10000
@@ -22,6 +23,7 @@ struct GarageDoor : Service::GarageDoorOpener
 
     SpanCharacteristic *current;
     SpanCharacteristic *target;
+
     rlc::DoorSensor &door;
     rlc::DoorButton &button;
     rlc::Timer movingTimer;
