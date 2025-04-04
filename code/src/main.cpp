@@ -24,6 +24,8 @@ void setup()
   homeSpan.setPairingCode("11122333");   // security code needed when pairing
   homeSpan.setControlPin(CONTROL_PIN);   // button to toggle between modes
   homeSpan.setStatusPin(PIN_STATUS_LED); // indicator of status / mode
+  homeSpan.setApSSID("GarageGenie");     // name the setup access point
+  homeSpan.setApSSID("password");        // password for the setup access point
   homeSpan.enableAutoStartAP();          // enable access point if no wifi credentials found
   homeSpan.enableOTA();                  // enable over-the-air updates
   homeSpan.enableWatchdog(180);          // reboot if poll method not called within timout specified

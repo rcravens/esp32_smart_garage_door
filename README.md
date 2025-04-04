@@ -76,8 +76,8 @@ After installing and powering on the device:
 3. Press and release the "control button" and the "status LED" should blink twice.
 4. Press and release the "control button" and the "status LED" should blink three times.
 5. Press and HOLD the "control button" to enter launch HomeSpan's temporary WiFi network.
-6. Use your iPhone to connect to the HomeSpan WiFi access point.
-7. Configure your WiFi SSID and password.
+6. Use your iPhone to connect to the "GarageGenie" WiFi access point using "password" as the password. NOTE: These are set in the code, so if you modified then use the new SSID/password.
+7. Provide the WiFi SSID and password for the network you want the device to join.
 8. Enter a pairing code (you will need this when you pair). The default is 1112-2333.
 
 For more info: <a href="https://github.com/HomeSpan/HomeSpan/blob/master/docs/UserGuide.md">HomeSpan User Guide</a>
