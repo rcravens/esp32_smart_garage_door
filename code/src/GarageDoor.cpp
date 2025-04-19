@@ -69,7 +69,12 @@ void GarageDoor::loop()
     {
         rlc::Console::Verbose("UPDATE: Position: " + String(this->door.position()) + " for " + String(this->door.seconds_at_position()) + " seconds");
 
-        isMoving = false;
+        if (isMoving)
+        {
+            isMoving = false;
+            target->setVal(current->getVal());
+        }
+
         if (door.seconds_at_position() > DOOR_SENSOR_CAPTURE_TIME_SECONDS &&
             current->timeVal() > LAST_CHANGED_THRESHOLD_MILLISECONDS)
         {
